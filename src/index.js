@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { QueryClientProvider, QueryClient } from 'react-query';
+import { ChakraProvider } from '@chakra-ui/react';
+import '@fontsource/raleway/400.css'
+import '@fontsource/open-sans/700.css'
+import theme from './Containers/Theme';
+
+
+const queryClient = new QueryClient;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}> 
+    {/* Provide the QueryClient */}
+    <ChakraProvider theme={theme}>
+      <App />
+      </ChakraProvider>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.app-header {
+  color: gray;
+  justify-content: center;
+  font-size: 100PX;
+}
+
+.todoList {
+  background-color: aqua;
+  color: aqua;
+}
+
+.deleteButton {
+  background-color: rgb(230, 40, 40);
+  margin-left: 10px;
+  height: 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: x-small;
+  width: 50px;
+  
+}
+
+.main{
+  display: grid;
+  place-items: center;
+  background-image: url('https://images.unsplash.com/photo-1533460077806-797b66c2b95c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80');
+  background-size:cover;
+  
+  
+}
+
+.user-list{
+  background-color: white;
+}
